@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marcadores Mundial 2026</title>
+<title>Polla Mundialista 2026</title>
 
 <style>
 body {
-  background: #0f172a;
-  color: white;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #000;
   padding: 20px;
 }
 
@@ -18,91 +18,139 @@ h1 {
 }
 
 .grupo {
-  margin: 25px 0;
+  margin-top: 30px;
 }
 
 .grupo h2 {
-  color: #38bdf8;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  font-size: 16px;
 }
 
 .partido {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background: rgba(255,255,255,0.05);
-  padding: 10px;
-  border-radius: 10px;
-  margin: 6px 0;
+  padding: 6px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .equipo {
   width: 35%;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
-input {
-  width: 40px;
+.resultado {
+  width: 20%;
   text-align: center;
-  border-radius: 5px;
-  border: none;
+  font-weight: bold;
+}
+
+.hora {
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.fase {
+  margin-top: 40px;
+}
+
+.fase h2 {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 8px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>⚽ Marcadores Mundial 2026</h1>
+<h1>🏆 POLLA MUNDIALISTA 2026</h1>
 
-<script>
-function crearGrupo(nombre, equipos, letra) {
-  let html = `<div class="grupo"><h2>${nombre}</h2>`;
-  
-  let id = 1;
+<!-- GRUPO A -->
+<div class="grupo">
+<h2>GRUPO A</h2>
 
-  for (let i = 0; i < equipos.length; i++) {
-    for (let j = i + 1; j < equipos.length; j++) {
-      html += `
-      <div class="partido">
-        <div class="equipo">${equipos[i]}</div>
-        <input id="${letra}${id++}a">
-        <span>-</span>
-        <input id="${letra}${id++}b">
-        <div class="equipo">${equipos[j]}</div>
-      </div>`;
-    }
-  }
+<div class="hora">Jueves 11 Junio - 16:00</div>
+<div class="partido"><div class="equipo">🇲🇽 México</div><div class="resultado">-</div><div class="equipo">🇿🇦 Sudáfrica</div></div>
 
-  html += `</div>`;
-  document.write(html);
-}
+<div class="hora">Jueves 11 Junio - 23:00</div>
+<div class="partido"><div class="equipo">🇰🇷 Corea</div><div class="resultado">-</div><div class="equipo">🇨🇿 Rep. Checa</div></div>
 
-/* GRUPOS */
-crearGrupo("Grupo A", ["🇲🇽 México","🇿🇦 Sudáfrica","🇰🇷 Corea","🇨🇿 Rep. Checa"], "a");
-crearGrupo("Grupo B", ["🇨🇦 Canadá","🇶🇦 Qatar","🇨🇭 Suiza","🇧🇦 Bosnia"], "b");
-crearGrupo("Grupo C", ["🇧🇷 Brasil","🇲🇦 Marruecos","🏴 Escocia","🇭🇹 Haití"], "c");
-crearGrupo("Grupo D", ["🇺🇸 USA","🇵🇾 Paraguay","🇦🇺 Australia","🇹🇷 Turquía"], "d");
-crearGrupo("Grupo E", ["🇩🇪 Alemania","🇪🇨 Ecuador","🇨🇮 Costa de Marfil","🇨🇼 Curazao"], "e");
-crearGrupo("Grupo F", ["🇳🇱 Países Bajos","🇯🇵 Japón","🇹🇳 Túnez","🇸🇪 Suecia"], "f");
-crearGrupo("Grupo G", ["🇧🇪 Bélgica","🇮🇷 Irán","🇪🇬 Egipto","🇳🇿 Nueva Zelanda"], "g");
-crearGrupo("Grupo H", ["🇪🇸 España","🇺🇾 Uruguay","🇸🇦 Arabia","🇨🇻 Cabo Verde"], "h");
-crearGrupo("Grupo I", ["🇫🇷 Francia","🇸🇳 Senegal","🇳🇴 Noruega","🇮🇶 Irak"], "i");
-crearGrupo("Grupo J", ["🇦🇷 Argentina","🇩🇿 Argelia","🇦🇹 Austria","🇯🇴 Jordania"], "j");
-crearGrupo("Grupo K", ["🇨🇴 Colombia","🇵🇹 Portugal","🇺🇿 Uzbekistán","🇨🇩 Congo"], "k");
-crearGrupo("Grupo L", ["🏴 Inglaterra","🇭🇷 Croacia","🇬🇭 Ghana","🇵🇦 Panamá"], "l");
+<div class="hora">18 Junio - 13:00</div>
+<div class="partido"><div class="equipo">🇨🇿 Rep. Checa</div><div class="resultado">-</div><div class="equipo">🇿🇦 Sudáfrica</div></div>
 
-/* GUARDADO AUTOMÁTICO */
-window.onload = () => {
-  document.querySelectorAll("input").forEach(input => {
-    input.value = localStorage.getItem(input.id) || "";
+<div class="hora">18 Junio - 22:00</div>
+<div class="partido"><div class="equipo">🇲🇽 México</div><div class="resultado">-</div><div class="equipo">🇰🇷 Corea</div></div>
 
-    input.addEventListener("input", () => {
-      localStorage.setItem(input.id, input.value);
-    });
-  });
-};
-</script>
+<div class="hora">24 Junio - 22:00</div>
+<div class="partido"><div class="equipo">🇿🇦 Sudáfrica</div><div class="resultado">-</div><div class="equipo">🇰🇷 Corea</div></div>
+
+<div class="hora">24 Junio - 22:00</div>
+<div class="partido"><div class="equipo">🇨🇿 Rep. Checa</div><div class="resultado">-</div><div class="equipo">🇲🇽 México</div></div>
+</div>
+
+<!-- GRUPO B -->
+<div class="grupo">
+<h2>GRUPO B</h2>
+
+<div class="partido"><div class="equipo">🇨🇦 Canadá</div><div class="resultado">-</div><div class="equipo">🇧🇦 Bosnia</div></div>
+<div class="partido"><div class="equipo">🇶🇦 Qatar</div><div class="resultado">-</div><div class="equipo">🇨🇭 Suiza</div></div>
+<div class="partido"><div class="equipo">🇨🇭 Suiza</div><div class="resultado">-</div><div class="equipo">🇧🇦 Bosnia</div></div>
+<div class="partido"><div class="equipo">🇨🇦 Canadá</div><div class="resultado">-</div><div class="equipo">🇶🇦 Qatar</div></div>
+<div class="partido"><div class="equipo">🇧🇦 Bosnia</div><div class="resultado">-</div><div class="equipo">🇶🇦 Qatar</div></div>
+<div class="partido"><div class="equipo">🇨🇭 Suiza</div><div class="resultado">-</div><div class="equipo">🇨🇦 Canadá</div></div>
+
+</div>
+
+<!-- GRUPO C -->
+<div class="grupo">
+<h2>GRUPO C</h2>
+
+<div class="partido"><div class="equipo">🇧🇷 Brasil</div><div class="resultado">-</div><div class="equipo">🇲🇦 Marruecos</div></div>
+<div class="partido"><div class="equipo">🇭🇹 Haití</div><div class="resultado">-</div><div class="equipo">🏴 Escocia</div></div>
+<div class="partido"><div class="equipo">🏴 Escocia</div><div class="resultado">-</div><div class="equipo">🇲🇦 Marruecos</div></div>
+<div class="partido"><div class="equipo">🇧🇷 Brasil</div><div class="resultado">-</div><div class="equipo">🇭🇹 Haití</div></div>
+<div class="partido"><div class="equipo">🏴 Escocia</div><div class="resultado">-</div><div class="equipo">🇧🇷 Brasil</div></div>
+<div class="partido"><div class="equipo">🇲🇦 Marruecos</div><div class="resultado">-</div><div class="equipo">🇭🇹 Haití</div></div>
+
+</div>
+
+<!-- GRUPO K (ejemplo fuerte Colombia 🔥) -->
+<div class="grupo">
+<h2>GRUPO K</h2>
+
+<div class="partido"><div class="equipo">🇵🇹 Portugal</div><div class="resultado">-</div><div class="equipo">🇨🇩 Congo</div></div>
+<div class="partido"><div class="equipo">🇺🇿 Uzbekistán</div><div class="resultado">-</div><div class="equipo">🇨🇴 Colombia</div></div>
+<div class="partido"><div class="equipo">🇵🇹 Portugal</div><div class="resultado">-</div><div class="equipo">🇺🇿 Uzbekistán</div></div>
+<div class="partido"><div class="equipo">🇨🇴 Colombia</div><div class="resultado">-</div><div class="equipo">🇨🇩 Congo</div></div>
+<div class="partido"><div class="equipo">🇨🇩 Congo</div><div class="resultado">-</div><div class="equipo">🇺🇿 Uzbekistán</div></div>
+<div class="partido"><div class="equipo">🇨🇴 Colombia</div><div class="resultado">-</div><div class="equipo">🇵🇹 Portugal</div></div>
+
+</div>
+
+<!-- FASE FINAL -->
+<div class="fase">
+<h2>OCTAVOS DE FINAL</h2>
+
+<div class="partido"><div class="equipo">1A</div><div class="resultado">-</div><div class="equipo">2B</div></div>
+<div class="partido"><div class="equipo">1C</div><div class="resultado">-</div><div class="equipo">2D</div></div>
+
+<h2>CUARTOS DE FINAL</h2>
+
+<div class="partido"><div class="equipo">Ganador 1</div><div class="resultado">-</div><div class="equipo">Ganador 2</div></div>
+
+<h2>SEMIFINAL</h2>
+
+<div class="partido"><div class="equipo">Ganador</div><div class="resultado">-</div><div class="equipo">Ganador</div></div>
+
+<h2>FINAL</h2>
+
+<div class="partido"><div class="equipo">Finalista 1</div><div class="resultado">-</div><div class="equipo">Finalista 2</div></div>
+
+</div>
 
 </body>
 </html>
