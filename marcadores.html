@@ -1,156 +1,379 @@
 <!DOCTYPE html>
 <html lang="es">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Polla Mundialista 2026</title>
 
 <style>
 body {
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #000;
-  padding: 20px;
+ font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #fff;
+  padding: 15px;
 }
 
+/* TÍTULO */
 h1 {
   text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  letter-spacing: 1px;
 }
 
-.grupo {
+/* TARJETAS */
+.tabla {
+  margin-bottom: 20px;
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* HEADER GRUPO */
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.letra {
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+/* TABLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+/* ENCABEZADOS */
+th {
+  background: rgba(255,255,255,0.08);
+  font-weight: 500;
+  padding: 8px;
+}
+
+/* FILAS */
+td {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* EQUIPOS */
+.casa {
+  text-align: right;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.fuera {
+  text-align: left;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+/* RESULTADO */
+td:nth-child(5),
+td:nth-child(6) {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* EFECTO HOVER */
+tr:hover {
+  background: rgba(255,255,255,0.05);
+  transition: 0.2s;
+}
+
+/* FASE FINAL */
+h2 {
+  border-radius: 12px;
   margin-top: 30px;
-}
-
-.grupo h2 {
-  background: #000;
-  color: #fff;
-  padding: 5px;
   font-size: 16px;
 }
 
-.partido {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px solid #ccc;
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
 }
 
-.equipo {
-  width: 35%;
-}
-
-.resultado {
-  width: 20%;
-  text-align: center;
-  font-weight: bold;
-}
-
-.hora {
-  font-size: 12px;
-  color: #555;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.fase {
-  margin-top: 40px;
-}
-
-.fase h2 {
-  text-align: center;
-  background: #000;
-  color: #fff;
-  padding: 8px;
-}
 </style>
 </head>
 
 <body>
 
-<h1>🏆 POLLA MUNDIALISTA 2026</h1>
+<h1>XXIII Mundial USA/MEX/CAN 2026</h1>
 
 <!-- GRUPO A -->
-<div class="grupo">
-<h2>GRUPO A</h2>
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#bbb;">A</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
 
-<div class="hora">Jueves 11 Junio - 16:00</div>
-<div class="partido"><div class="equipo">🇲🇽 México</div><div class="resultado">-</div><div class="equipo">🇿🇦 Sudáfrica</div></div>
+<tr><td>6/11/2026</td><td>21:00</td><td>J1</td><td class="casa">México</td><td>-</td><td>-</td><td class="fuera">Sudáfrica</td></tr>
+<tr><td>6/12/2026</td><td>4:00</td><td>J1</td><td class="casa">Corea del Sur</td><td>-</td><td>-</td><td class="fuera">República Checa</td></tr>
+<tr><td>6/18/2026</td><td>18:00</td><td>J2</td><td class="casa">República Checa</td><td>-</td><td>-</td><td class="fuera">Sudáfrica</td></tr>
+<tr><td>6/19/2026</td><td>3:00</td><td>J2</td><td class="casa">México</td><td>-</td><td>-</td><td class="fuera">Corea del Sur</td></tr>
+<tr><td>6/25/2026</td><td>3:00</td><td>J3</td><td class="casa">República Checa</td><td>-</td><td>-</td><td class="fuera">México</td></tr>
+<tr><td>6/25/2026</td><td>3:00</td><td>J3</td><td class="casa">Sudáfrica</td><td>-</td><td>-</td><td class="fuera">Corea del Sur</td></tr>
 
-<div class="hora">Jueves 11 Junio - 23:00</div>
-<div class="partido"><div class="equipo">🇰🇷 Corea</div><div class="resultado">-</div><div class="equipo">🇨🇿 Rep. Checa</div></div>
-
-<div class="hora">18 Junio - 13:00</div>
-<div class="partido"><div class="equipo">🇨🇿 Rep. Checa</div><div class="resultado">-</div><div class="equipo">🇿🇦 Sudáfrica</div></div>
-
-<div class="hora">18 Junio - 22:00</div>
-<div class="partido"><div class="equipo">🇲🇽 México</div><div class="resultado">-</div><div class="equipo">🇰🇷 Corea</div></div>
-
-<div class="hora">24 Junio - 22:00</div>
-<div class="partido"><div class="equipo">🇿🇦 Sudáfrica</div><div class="resultado">-</div><div class="equipo">🇰🇷 Corea</div></div>
-
-<div class="hora">24 Junio - 22:00</div>
-<div class="partido"><div class="equipo">🇨🇿 Rep. Checa</div><div class="resultado">-</div><div class="equipo">🇲🇽 México</div></div>
+</table>
+</div>
+</div>
 </div>
 
 <!-- GRUPO B -->
-<div class="grupo">
-<h2>GRUPO B</h2>
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:red;">B</div>
+<div class="contenido">
+<table>
 
-<div class="partido"><div class="equipo">🇨🇦 Canadá</div><div class="resultado">-</div><div class="equipo">🇧🇦 Bosnia</div></div>
-<div class="partido"><div class="equipo">🇶🇦 Qatar</div><div class="resultado">-</div><div class="equipo">🇨🇭 Suiza</div></div>
-<div class="partido"><div class="equipo">🇨🇭 Suiza</div><div class="resultado">-</div><div class="equipo">🇧🇦 Bosnia</div></div>
-<div class="partido"><div class="equipo">🇨🇦 Canadá</div><div class="resultado">-</div><div class="equipo">🇶🇦 Qatar</div></div>
-<div class="partido"><div class="equipo">🇧🇦 Bosnia</div><div class="resultado">-</div><div class="equipo">🇶🇦 Qatar</div></div>
-<div class="partido"><div class="equipo">🇨🇭 Suiza</div><div class="resultado">-</div><div class="equipo">🇨🇦 Canadá</div></div>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
 
+<tr><td>6/12/2026</td><td>21:00</td><td>J1</td><td class="casa">Canadá</td><td>-</td><td>-</td><td class="fuera">Bosnia</td></tr>
+<tr><td>6/13/2026</td><td>21:00</td><td>J1</td><td class="casa">Qatar</td><td>-</td><td>-</td><td class="fuera">Suiza</td></tr>
+<tr><td>6/18/2026</td><td>21:00</td><td>J2</td><td class="casa">Suiza</td><td>-</td><td>-</td><td class="fuera">Bosnia</td></tr>
+<tr><td>6/19/2026</td><td>0:00</td><td>J2</td><td class="casa">Canadá</td><td>-</td><td>-</td><td class="fuera">Qatar</td></tr>
+<tr><td>6/24/2026</td><td>21:00</td><td>J3</td><td class="casa">Suiza</td><td>-</td><td>-</td><td class="fuera">Canadá</td></tr>
+<tr><td>6/24/2026</td><td>21:00</td><td>J3</td><td class="casa">Bosnia</td><td>-</td><td>-</td><td class="fuera">Qatar</td></tr>
+
+</table>
+</div>
+</div>
 </div>
 
 <!-- GRUPO C -->
-<div class="grupo">
-<h2>GRUPO C</h2>
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#e6d85c;">C</div>
+<div class="contenido">
+<table>
 
-<div class="partido"><div class="equipo">🇧🇷 Brasil</div><div class="resultado">-</div><div class="equipo">🇲🇦 Marruecos</div></div>
-<div class="partido"><div class="equipo">🇭🇹 Haití</div><div class="resultado">-</div><div class="equipo">🏴 Escocia</div></div>
-<div class="partido"><div class="equipo">🏴 Escocia</div><div class="resultado">-</div><div class="equipo">🇲🇦 Marruecos</div></div>
-<div class="partido"><div class="equipo">🇧🇷 Brasil</div><div class="resultado">-</div><div class="equipo">🇭🇹 Haití</div></div>
-<div class="partido"><div class="equipo">🏴 Escocia</div><div class="resultado">-</div><div class="equipo">🇧🇷 Brasil</div></div>
-<div class="partido"><div class="equipo">🇲🇦 Marruecos</div><div class="resultado">-</div><div class="equipo">🇭🇹 Haití</div></div>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
 
+<tr><td>6/14/2026</td><td>0:00</td><td>J1</td><td class="casa">Brasil</td><td>-</td><td>-</td><td class="fuera">Marruecos</td></tr>
+<tr><td>6/14/2026</td><td>3:00</td><td>J1</td><td class="casa">Haití</td><td>-</td><td>-</td><td class="fuera">Escocia</td></tr>
+<tr><td>6/20/2026</td><td>0:00</td><td>J2</td><td class="casa">Escocia</td><td>-</td><td>-</td><td class="fuera">Marruecos</td></tr>
+<tr><td>6/20/2026</td><td>2:30</td><td>J2</td><td class="casa">Brasil</td><td>-</td><td>-</td><td class="fuera">Haití</td></tr>
+<tr><td>6/25/2026</td><td>0:00</td><td>J3</td><td class="casa">Escocia</td><td>-</td><td>-</td><td class="fuera">Brasil</td></tr>
+<tr><td>6/25/2026</td><td>0:00</td><td>J3</td><td class="casa">Marruecos</td><td>-</td><td>-</td><td class="fuera">Haití</td></tr>
+
+</table>
+</div>
+</div>
+</div>
+<!-- GRUPO D -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#3b5f9e;">D</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
+
+<tr><td>6/13/2026</td><td>3:00</td><td>J1</td><td class="casa">Estados Unidos</td><td>-</td><td>-</td><td class="fuera">Paraguay</td></tr>
+<tr><td>6/14/2026</td><td>6:00</td><td>J1</td><td class="casa">Australia</td><td>-</td><td>-</td><td class="fuera">Turquía</td></tr>
+<tr><td>6/19/2026</td><td>21:00</td><td>J2</td><td class="casa">Estados Unidos</td><td>-</td><td>-</td><td class="fuera">Australia</td></tr>
+<tr><td>6/20/2026</td><td>5:00</td><td>J2</td><td class="casa">Turquía</td><td>-</td><td>-</td><td class="fuera">Paraguay</td></tr>
+<tr><td>6/26/2026</td><td>4:00</td><td>J3</td><td class="casa">Turquía</td><td>-</td><td>-</td><td class="fuera">Estados Unidos</td></tr>
+<tr><td>6/26/2026</td><td>4:00</td><td>J3</td><td class="casa">Paraguay</td><td>-</td><td>-</td><td class="fuera">Australia</td></tr>
+
+</table>
+</div>
+</div>
 </div>
 
-<!-- GRUPO K (ejemplo fuerte Colombia 🔥) -->
-<div class="grupo">
-<h2>GRUPO K</h2>
+<!-- GRUPO E -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#f57c00;">E</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
 
-<div class="partido"><div class="equipo">🇵🇹 Portugal</div><div class="resultado">-</div><div class="equipo">🇨🇩 Congo</div></div>
-<div class="partido"><div class="equipo">🇺🇿 Uzbekistán</div><div class="resultado">-</div><div class="equipo">🇨🇴 Colombia</div></div>
-<div class="partido"><div class="equipo">🇵🇹 Portugal</div><div class="resultado">-</div><div class="equipo">🇺🇿 Uzbekistán</div></div>
-<div class="partido"><div class="equipo">🇨🇴 Colombia</div><div class="resultado">-</div><div class="equipo">🇨🇩 Congo</div></div>
-<div class="partido"><div class="equipo">🇨🇩 Congo</div><div class="resultado">-</div><div class="equipo">🇺🇿 Uzbekistán</div></div>
-<div class="partido"><div class="equipo">🇨🇴 Colombia</div><div class="resultado">-</div><div class="equipo">🇵🇹 Portugal</div></div>
+<tr><td>6/14/2026</td><td>19:00</td><td>J1</td><td class="casa">Alemania</td><td>-</td><td>-</td><td class="fuera">Curazao</td></tr>
+<tr><td>6/15/2026</td><td>1:00</td><td>J1</td><td class="casa">Costa de Marfil</td><td>-</td><td>-</td><td class="fuera">Ecuador</td></tr>
+<tr><td>6/20/2026</td><td>22:00</td><td>J2</td><td class="casa">Alemania</td><td>-</td><td>-</td><td class="fuera">Costa de Marfil</td></tr>
+<tr><td>6/21/2026</td><td>2:00</td><td>J2</td><td class="casa">Ecuador</td><td>-</td><td>-</td><td class="fuera">Curazao</td></tr>
+<tr><td>6/25/2026</td><td>22:00</td><td>J3</td><td class="casa">Curazao</td><td>-</td><td>-</td><td class="fuera">Costa de Marfil</td></tr>
+<tr><td>6/25/2026</td><td>22:00</td><td>J3</td><td class="casa">Ecuador</td><td>-</td><td>-</td><td class="fuera">Alemania</td></tr>
 
+</table>
+</div>
+</div>
+</div>
+
+<!-- GRUPO F -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#0b6e4f;">F</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
+
+<tr><td>6/14/2026</td><td>22:00</td><td>J1</td><td class="casa">Países Bajos</td><td>-</td><td>-</td><td class="fuera">Japón</td></tr>
+<tr><td>6/15/2026</td><td>4:00</td><td>J1</td><td class="casa">Suecia</td><td>-</td><td>-</td><td class="fuera">Túnez</td></tr>
+<tr><td>6/20/2026</td><td>19:00</td><td>J2</td><td class="casa">Países Bajos</td><td>-</td><td>-</td><td class="fuera">Suecia</td></tr>
+<tr><td>6/21/2026</td><td>6:00</td><td>J2</td><td class="casa">Túnez</td><td>-</td><td>-</td><td class="fuera">Japón</td></tr>
+<tr><td>6/26/2026</td><td>1:00</td><td>J3</td><td class="casa">Japón</td><td>-</td><td>-</td><td class="fuera">Suecia</td></tr>
+<tr><td>6/26/2026</td><td>1:00</td><td>J3</td><td class="casa">Túnez</td><td>-</td><td>-</td><td class="fuera">Países Bajos</td></tr>
+
+</table>
+</div>
+</div>
+</div>
+
+<!-- GRUPO G -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#9b8fc1;">G</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
+
+<tr><td>6/15/2026</td><td>21:00</td><td>J1</td><td class="casa">Bélgica</td><td>-</td><td>-</td><td class="fuera">Egipto</td></tr>
+<tr><td>6/16/2026</td><td>3:00</td><td>J1</td><td class="casa">Irán</td><td>-</td><td>-</td><td class="fuera">Nueva Zelanda</td></tr>
+<tr><td>6/21/2026</td><td>21:00</td><td>J2</td><td class="casa">Bélgica</td><td>-</td><td>-</td><td class="fuera">Irán</td></tr>
+<tr><td>6/22/2026</td><td>3:00</td><td>J2</td><td class="casa">Nueva Zelanda</td><td>-</td><td>-</td><td class="fuera">Egipto</td></tr>
+<tr><td>6/27/2026</td><td>5:00</td><td>J3</td><td class="casa">Egipto</td><td>-</td><td>-</td><td class="fuera">Bélgica</td></tr>
+<tr><td>6/27/2026</td><td>5:00</td><td>J3</td><td class="casa">Nueva Zelanda</td><td>-</td><td>-</td><td class="fuera">Irán</td></tr>
+
+</table>
+</div>
+</div>
+</div>
+
+<!-- GRUPO H -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#6ec1b2;">H</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
+
+<tr><td>6/15/2026</td><td>18:00</td><td>J1</td><td class="casa">España</td><td>-</td><td>-</td><td class="fuera">Cabo Verde</td></tr>
+<tr><td>6/16/2026</td><td>0:00</td><td>J1</td><td class="casa">Arabia Saudita</td><td>-</td><td>-</td><td class="fuera">Uruguay</td></tr>
+<tr><td>6/21/2026</td><td>18:00</td><td>J2</td><td class="casa">España</td><td>-</td><td>-</td><td class="fuera">Arabia Saudita</td></tr>
+<tr><td>6/22/2026</td><td>0:00</td><td>J2</td><td class="casa">Uruguay</td><td>-</td><td>-</td><td class="fuera">Cabo Verde</td></tr>
+<tr><td>6/27/2026</td><td>2:00</td><td>J3</td><td class="casa">Cabo Verde</td><td>-</td><td>-</td><td class="fuera">Arabia Saudita</td></tr>
+<tr><td>6/27/2026</td><td>2:00</td><td>J3</td><td class="casa">Uruguay</td><td>-</td><td>-</td><td class="fuera">España</td></tr>
+
+</table>
+</div>
+</div>
+</div>
+<!-- GRUPO I -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#4a90e2;">I</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
+
+<tr><td>6/16/2026</td><td>21:00</td><td>J1</td><td class="casa">Francia</td><td>-</td><td>-</td><td class="fuera">Senegal</td></tr>
+<tr><td>6/17/2026</td><td>3:00</td><td>J1</td><td class="casa">Noruega</td><td>-</td><td>-</td><td class="fuera">Irak</td></tr>
+<tr><td>6/22/2026</td><td>21:00</td><td>J2</td><td class="casa">Francia</td><td>-</td><td>-</td><td class="fuera">Noruega</td></tr>
+<tr><td>6/23/2026</td><td>3:00</td><td>J2</td><td class="casa">Irak</td><td>-</td><td>-</td><td class="fuera">Senegal</td></tr>
+<tr><td>6/28/2026</td><td>3:00</td><td>J3</td><td class="casa">Senegal</td><td>-</td><td>-</td><td class="fuera">Noruega</td></tr>
+<tr><td>6/28/2026</td><td>3:00</td><td>J3</td><td class="casa">Irak</td><td>-</td><td>-</td><td class="fuera">Francia</td></tr>
+
+</table>
+</div>
+</div>
+</div>
+
+<!-- GRUPO J -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#2ecc71;">J</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
+
+<tr><td>6/16/2026</td><td>18:00</td><td>J1</td><td class="casa">Argentina</td><td>-</td><td>-</td><td class="fuera">Argelia</td></tr>
+<tr><td>6/17/2026</td><td>0:00</td><td>J1</td><td class="casa">Austria</td><td>-</td><td>-</td><td class="fuera">Jordania</td></tr>
+<tr><td>6/22/2026</td><td>18:00</td><td>J2</td><td class="casa">Argentina</td><td>-</td><td>-</td><td class="fuera">Austria</td></tr>
+<tr><td>6/23/2026</td><td>0:00</td><td>J2</td><td class="casa">Jordania</td><td>-</td><td>-</td><td class="fuera">Argelia</td></tr>
+<tr><td>6/28/2026</td><td>0:00</td><td>J3</td><td class="casa">Argelia</td><td>-</td><td>-</td><td class="fuera">Austria</td></tr>
+<tr><td>6/28/2026</td><td>0:00</td><td>J3</td><td class="casa">Jordania</td><td>-</td><td>-</td><td class="fuera">Argentina</td></tr>
+
+</table>
+</div>
+</div>
+</div>
+
+<!-- GRUPO K -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#f1c40f;">K</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
+
+<tr><td>6/17/2026</td><td>14:00</td><td>J1</td><td class="casa">Portugal</td><td>-</td><td>-</td><td class="fuera">Congo</td></tr>
+<tr><td>6/17/2026</td><td>23:00</td><td>J1</td><td class="casa">Uzbekistán</td><td>-</td><td>-</td><td class="fuera">Colombia</td></tr>
+<tr><td>6/23/2026</td><td>14:00</td><td>J2</td><td class="casa">Portugal</td><td>-</td><td>-</td><td class="fuera">Uzbekistán</td></tr>
+<tr><td>6/23/2026</td><td>23:00</td><td>J2</td><td class="casa">Colombia</td><td>-</td><td>-</td><td class="fuera">Congo</td></tr>
+<tr><td>6/27/2026</td><td>20:30</td><td>J3</td><td class="casa">Congo</td><td>-</td><td>-</td><td class="fuera">Uzbekistán</td></tr>
+<tr><td>6/27/2026</td><td>20:30</td><td>J3</td><td class="casa">Colombia</td><td>-</td><td>-</td><td class="fuera">Portugal</td></tr>
+
+</table>
+</div>
+</div>
+</div>
+
+<!-- GRUPO L -->
+<div class="tabla">
+<div class="titulo">
+<div class="letra" style="background:#e74c3c;">L</div>
+<div class="contenido">
+<table>
+<tr><th>Fecha</th><th>Hora</th><th>Jor.</th><th>Casa</th><th>Gol</th><th>Gol</th><th>Fuera</th></tr>
+
+<tr><td>6/17/2026</td><td>18:00</td><td>J1</td><td class="casa">Inglaterra</td><td>-</td><td>-</td><td class="fuera">Panamá</td></tr>
+<tr><td>6/18/2026</td><td>0:00</td><td>J1</td><td class="casa">Croacia</td><td>-</td><td>-</td><td class="fuera">Ghana</td></tr>
+<tr><td>6/23/2026</td><td>18:00</td><td>J2</td><td class="casa">Inglaterra</td><td>-</td><td>-</td><td class="fuera">Croacia</td></tr>
+<tr><td>6/24/2026</td><td>0:00</td><td>J2</td><td class="casa">Ghana</td><td>-</td><td>-</td><td class="fuera">Panamá</td></tr>
+<tr><td>6/28/2026</td><td>2:00</td><td>J3</td><td class="casa">Panamá</td><td>-</td><td>-</td><td class="fuera">Croacia</td></tr>
+<tr><td>6/28/2026</td><td>2:00</td><td>J3</td><td class="casa">Ghana</td><td>-</td><td>-</td><td class="fuera">Inglaterra</td></tr>
+
+</table>
+</div>
+</div>
 </div>
 
 <!-- FASE FINAL -->
-<div class="fase">
-<h2>OCTAVOS DE FINAL</h2>
+<div style="margin-top:40px;">
+<h2 style="text-align:center; background:#000; color:#fff; padding:10px;">FASE FINAL</h2>
 
-<div class="partido"><div class="equipo">1A</div><div class="resultado">-</div><div class="equipo">2B</div></div>
-<div class="partido"><div class="equipo">1C</div><div class="resultado">-</div><div class="equipo">2D</div></div>
+<table style="width:100%; border-collapse:collapse;">
+<tr><th>Fase</th><th>Partido</th><th>Resultado</th></tr>
 
-<h2>CUARTOS DE FINAL</h2>
+<tr><td>Octavos</td><td>1A vs 2B</td><td>-</td></tr>
+<tr><td>Octavos</td><td>1C vs 2D</td><td>-</td></tr>
+<tr><td>Octavos</td><td>1E vs 2F</td><td>-</td></tr>
+<tr><td>Octavos</td><td>1G vs 2H</td><td>-</td></tr>
+<tr><td>Octavos</td><td>1I vs 2J</td><td>-</td></tr>
+<tr><td>Octavos</td><td>1K vs 2L</td><td>-</td></tr>
 
-<div class="partido"><div class="equipo">Ganador 1</div><div class="resultado">-</div><div class="equipo">Ganador 2</div></div>
+<tr><td>Cuartos</td><td>Ganador 1 vs Ganador 2</td><td>-</td></tr>
+<tr><td>Cuartos</td><td>Ganador 3 vs Ganador 4</td><td>-</td></tr>
 
-<h2>SEMIFINAL</h2>
+<tr><td>Semifinal</td><td>Ganadores</td><td>-</td></tr>
 
-<div class="partido"><div class="equipo">Ganador</div><div class="resultado">-</div><div class="equipo">Ganador</div></div>
+<tr><td>Final</td><td>Finalistas</td><td>-</td></tr>
 
-<h2>FINAL</h2>
-
-<div class="partido"><div class="equipo">Finalista 1</div><div class="resultado">-</div><div class="equipo">Finalista 2</div></div>
-
+</table>
 </div>
-
-</body>
-</html>
